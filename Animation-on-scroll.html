@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+            section{
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            section:first-child{
+                background-color: rgb(231, 213, 213);
+            }
+            section:nth-child(2){
+                background-color: rgb(207, 207, 207);
+            }
+            section:nth-child(3){
+                background-color: rgb(179, 170, 170);
+            }
+            section:last-of-type{
+                background-color: rgb(92, 87, 87);
+            }
+            .progress{
+                background-color: white;
+                width: 500px;
+                height: 30px;
+                position: relative;
+                margin: 10px;
+            }
+            .progress span{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                background-color: indianred;
+                transition: width 0.3s linear;
+            }
+    </style>
+</head>
+<body>
+    <section class="one">section one</section>
+    <section class="two">section two</section>
+    <section class="three">
+        <!-- <h1 style="text-align: left;">section three</h1> -->
+        <div class="skills">
+            <h3>HTML</h3>
+            <div class="progress">
+                <span style="width: 0; " data-width="90%"></span>
+            </div>
+            <h3>Js</h3>
+            <div class="progress">
+                <span style="width: 0; " data-width="67%"></span>
+            </div>
+            <h3>CSS</h3>
+            <div class="progress">
+                <span style="width: 0; " data-width="80%"></span>
+            </div>
+        </div>
+    </section>
+    <section class="four">section four</section>
+    <script>
+        let seca = document.querySelector(".three");
+        let spans = document.querySelectorAll(".progress span")
+        window.onscroll = function(){
+            if(window.scrollY >= seca.offsetTop){
+                spans.forEach((span)=>{
+                    span.style.width = span.dataset.width;
+                })
+            }else{
+                spans.forEach((span)=>{
+                    span.style.width = 0;
+                })
+            }
+
+        };
+    </script>
+</body>
+</html>

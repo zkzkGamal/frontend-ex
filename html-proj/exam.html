@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{background-color: white;}
+        </style>
+        <title>exam</title>
+    </head>
+    <body>
+    <table border="1" style="background-color: pink; border: solid;border-collapse: collapse;">
+            <tr>
+                <td valign="top">
+                    <p style="color: red;"><i>!yahoo web site!</i></p>
+                    <hr style="color: gold;width: 200;size: 10;border: solid;">
+                    <a href="www.ask.com" target="_blank">sreach about any object</a><br>
+                    <a href="sendto:Administrator@yahoo.com">contact us</a><br>
+                    <a style="color: blue;" href="../html-proj/create new account.html">Create new account</a>
+                </td>
+                <td style="text-align:justify;">
+                    <h1>&nbsp;<u>Create new account in Yahoo! </u>&nbsp;</h1>
+                    <form action="../html-sheet/sheet1.html" target="_blank">
+                        &nbsp; please insert requirement data of the following:<br>
+                        <label>&nbsp; first name : </label>
+                        <input type="text" name="name"><br>
+                        <label>&nbsp; password : </label>
+                        <input type="password"  >&nbsp;<font size="2">write 6 Character</font><br>
+                        <label>&nbsp; kind </label>
+                        <input type="radio" name="sex" value="male" >male
+                        <input type="radio" name="sex" value="female">female<br>
+                        <label>&nbsp; birthday</label>
+                        <select>
+                            <option>&nbsp; -select your year- </option>
+                            <option value="1990">1990</option>
+                            <option value="1992">1992</option>
+                            <option value="1994">1994</option>
+                        </select><br>
+                        <label>&nbsp; select your hopes </label>
+                        <input type="checkbox">Art
+                        <input type="checkbox">swimming
+                        <input type="checkbox">Reading<br>
+                        <label>&nbsp; write any comment if you want </label><br>
+                        <div style="text-indent: 1ex;">
+                        <textarea rows="10" cols="20" name="message" style="text-indent: 0em;"></textarea><br>
+                        <input type="submit" value="continue">
+                        <input type="reset" value="cancel">
+                        </div>
+                    </form>
+                </td>
+                <td  valign="top">
+                    <table style="border: dashed;" border="1">
+                        <caption>Subscription Cost</caption>
+                        <tr>
+                            <th align="center">Range</th>
+                            <th align="center">Cost</th>
+                        </tr>
+                        <tr>
+                            <td>3 months</td>
+                            <td>500$</td>
+                        </tr>
+                        <tr>
+                            <td>6 months</td>
+                            <td>300$</td>
+                        </tr>
+                        <tr>
+                            <td>one year</td>
+                            <td>100$</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+		<script>
+			var went = true;
+			var go = went ? "yes" : "no" ;
+			var x = "yes"
+			if(go != "no"){
+				x+= 1 + "no"
+			}
+			console.log(x)
+			
+			
+			var i;
+			var y=6;
+			var a =["b",1,2,3];
+			for(i=0;i<a.length;i++){
+				y+=a[i]
+			}
+			console.log(y)
+			
+		</script>
+    </body>
+</html>

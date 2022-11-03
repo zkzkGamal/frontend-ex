@@ -1,0 +1,49 @@
+﻿  {
+	  /* or write padding-side: --px;*/
+	  /* top right bottom left */
+	  /*  10   15    10    15 */
+  } -- padding
+  {
+	  /* red(ff)  green=(ff)  blue=(ff) */
+	  /* hex decimal color */
+	  /*
+	  background-image: url("");
+	  background-repet: repet;
+	  background-posion(جعل الصوره في اي مكان)
+	  background-size
+	  */
+  } -- background-Attachment
+  {
+	  /* or write margin-side: --px;*/
+	  /* top right bottom left */
+	  /*  10   15    10    15 */
+  } - - margin 
+	  -- (used for الحواف الخارجيه للصفحه ) 
+	  -- (accepted -ive number) 
+	  -- (we can use margin-side: auto -- (for width))
+  {
+	/* border-width: 10px;
+	border-style: solid;
+	border-color: green red blue yellow; */
+  } -- border-Attachment
+  {
+	/* outline-width: 10px;
+	outline-style: solid;
+	outline-color: green red blue yellow; */
+  } -- outline-Attachment
+  {
+	width(min,max)--[min يبداء من الرقم شيئ محدد ] [max يقف عند الرقم المحدد ] [inline or fit-content ينتي مع نهابت الكلام]
+  }-- width or hight
+  {
+	direction -- (ltr من الشمال الي اليمن) -- (rtl من اليمن الي الشمال)
+  } -- text
+  {
+	vertical-alignment(top , bottom , middle  ) 
+  }
+  z-index doesn't work without posion 
+  {
+	H | V | Blur | Spread | Color | Inset
+  }--Box shadow
+  
+
+  

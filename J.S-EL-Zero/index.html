@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn
+        {
+              padding: 11px;
+              margin: 5px 40px;
+              border-radius: 20%;
+              background: linear-gradient(to bottom,#57BBCE ,#F2F2F4);
+              font-weight: bold;
+        }
+        #btn1
+        {
+             padding: 12px 19px;
+             margin: 5px 100px;
+             border-radius: 20%;
+             background: linear-gradient(to bottom,#57BBCE ,#F2F2F4);
+             font-weight: bold;
+        }
+        #x,#y
+        {
+            width:200px;
+            height:20px;
+            border:1px solid #57BBCE;
+            border-radius:25%; 
+            background-size: cover;
+            margin:10px 30px;
+        }
+        #aa,#bb
+        {
+            padding:0 30px;
+            font-weight:bold;
+            margin: 10px 40px; 
+            color:Yellow;           
+        }
+        .clac
+        {
+            background:linear-gradient(to bottom,#57BBCE ,#F2F2F4 ,#CA5135 );
+            height:50%;
+            width:30%;
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="clac">
+        <h1 id="bb">first lesson</h1>
+        <p id="aa">my name is zkaria</p>
+        <input type="text" id="x" name="text" ><br /><br />
+        <input type="text" id="y" name="text" ><br />
+        <p id="result"  style="padding:0 10px;"></p>
+        <button onclick="sum()" id="btn">sum</button>
+        <button onclick="sub()" id="btn" >sub</button> <br />
+        <button onclick="multi()" id="btn" >mul</button>
+        <button onclick="div()" id="btn">div</button><br />
+        <button onclick="clr()" id="btn1">clear</button>
+    </div>
+    <script>
+        function sum() {
+            //document.getElementById("aa").innerHTML="heem khanzeer"
+            //window.close()
+            //var x = parseInt(prompt('enter x'));
+            //var y = parseInt(prompt('enter y'));
+            //var z = x + y
+            //alert("result is : " + z)
+            var x = parseInt(document.getElementById("x").value);
+            var y = parseInt(document.getElementById("y").value);
+            var z = x + y;
+			console.log(Math.sin(x))
+            document.getElementById("result").innerHTML = "the result is : " + z ;
+        }
+        function sub() {
+            var x = parseInt(document.getElementById("x").value);
+            var y = parseInt(document.getElementById("y").value);
+            var z = x - y;
+            document.getElementById("result").innerHTML = "the result is : " + z;
+        }
+        function multi() {
+            var x = parseInt(document.getElementById("x").value);
+            var y = parseInt(document.getElementById("y").value);
+            var z = x * y;
+            document.getElementById("result").innerHTML = "the result is : " + z;
+        }
+        function div() {
+            var x = parseInt(document.getElementById("x").value);
+            var y = parseInt(document.getElementById("y").value);
+            var z = x / y;
+            document.getElementById("result").innerHTML = "the result is : " + z;
+        }
+        function clr() {
+            var x = document.getElementById("x").value="";
+            var y = document.getElementById("y").value = "";
+            window.result.innerHTML = "";
+        }
+    </script>
+</body>
+</html>
